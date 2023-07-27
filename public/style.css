@@ -1,0 +1,119 @@
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #ffdbaa;
+  overflow: hidden;
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 16s linear infinite;
+}
+
+.background li:nth-child(0) {
+  left: 6%;
+  width: 188px;
+  height: 188px;
+  bottom: -188px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 66%;
+  width: 102px;
+  height: 102px;
+  bottom: -102px;
+  animation-delay: 5s;
+}
+.background li:nth-child(2) {
+  left: 29%;
+  width: 176px;
+  height: 176px;
+  bottom: -176px;
+  animation-delay: 10s;
+}
+.background li:nth-child(3) {
+  left: 86%;
+  width: 198px;
+  height: 198px;
+  bottom: -198px;
+  animation-delay: 8s;
+}
+.background li:nth-child(4) {
+  left: 21%;
+  width: 131px;
+  height: 131px;
+  bottom: -131px;
+  animation-delay: 11s;
+}
+.background li:nth-child(5) {
+  left: 85%;
+  width: 117px;
+  height: 117px;
+  bottom: -117px;
+  animation-delay: 6s;
+}
+.background li:nth-child(6) {
+  left: 63%;
+  width: 132px;
+  height: 132px;
+  bottom: -132px;
+  animation-delay: 12s;
+}
+.background li:nth-child(7) {
+  left: 30%;
+  width: 118px;
+  height: 118px;
+  bottom: -118px;
+  animation-delay: 24s;
+}
+.background li:nth-child(8) {
+  left: 51%;
+  width: 105px;
+  height: 105px;
+  bottom: -105px;
+  animation-delay: 32s;
+}
+.background li:nth-child(9) {
+  left: 47%;
+  width: 162px;
+  height: 162px;
+  bottom: -162px;
+  animation-delay: 25s;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.hidey {
+  display: none !important;
+}
+
+#submitButton {
+  background-color: #fff0f5;
+  border-radius: 50%;
+  font-weight: bolder;
+  border-color: #fff0f5;
+}
